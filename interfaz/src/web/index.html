@@ -11,7 +11,21 @@
 </head>
 <body class="bg-light">
   <div class="container py-4">
-    <h1 class="text-center mb-4">🛠️ Control Mini Rover</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(33, 37, 41, 0.7);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://cdn.dribbble.com/userupload/15992624/file/original-7ed001aa04a688e5e740d2de999567a4.jpg?resize=1024x768&vertical=center" alt="Logo" width="30" height="30"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     
     
     <div class="row">
@@ -52,11 +66,38 @@
       </div>
     </div>
 
-
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5>🎮 Control de Xbox</h5>
+        <p id="gamepad-status">🔴 Desconectado</p>
+        <div class="row">
+          <div class="col">
+            <p>Joystick: <span id="joystick-pos">--</span></p>
+          </div>
+          <div class="col">
+            <p>Botón A: <span id="boton-a">No presionado</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row mt-4">
       <div class="col-12 text-center">
         <button id="btn-stop" class="btn btn-danger btn-lg mx-2">⛔ STOP</button>
         <button id="btn-autonomo" class="btn btn-warning btn-lg mx-2">🤖 Autónomo</button>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-md-8">
+      <canvas id="mapa" width="500" height="500" style="border:1px solid #000;"></canvas>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5>Dirección: <span id="direccion">Detenido</span></h5>
+          <div id="flecha" style="font-size: 50px;">↑</div>
+        </div>
       </div>
     </div>
   </div>

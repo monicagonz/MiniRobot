@@ -1,6 +1,10 @@
 /* styles.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /*background-image: url('https://cdn.dribbble.com/userupload/23324899/file/original-60928d1edaf38cfb235c8c0ff80cf3b0.gif');*/
+    background-size: 150% 150%;
+    
   }
   
   /* Animación para alertas de batería baja */
@@ -15,7 +19,7 @@ body {
     color: #dc3545 !important;
   }
   
-  /* Estilo personalizado para cards de estado */
+
   .card {
     transition: transform 0.2s;
   }
